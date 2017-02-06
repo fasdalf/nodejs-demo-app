@@ -1,0 +1,9 @@
+<% layout('../layout') -%>
+<h1><%= title %></h1>
+<ul>
+<% for (var i in tours) { %>
+<li>
+    <a href="/html-item/<%= tours[i].id %>" title="Read more"><%= tours[i].name %></a>
+</li>
+<% } /* for tours */ %>
+</ul>
